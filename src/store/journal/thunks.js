@@ -20,6 +20,8 @@ export const startNewNote = () => {
     const newNote = {
       title: "",
       body: "",
+      area: "",
+      dni: "",
       imageUrls: [],
       date: new Date().getTime(),
     };
