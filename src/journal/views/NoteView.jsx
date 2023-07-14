@@ -195,6 +195,7 @@ export const NoteView = () => {
       <Grid container>
         <TextField
           type="text"
+          required
           variant="filled"
           fullWidth
           placeholder="Ingrese un título"
@@ -209,6 +210,7 @@ export const NoteView = () => {
           select
           variant="filled"
           fullWidth
+          required
           label="Área Médica"
           name="area"
           value={area}
@@ -225,6 +227,7 @@ export const NoteView = () => {
           type="text"
           variant="filled"
           fullWidth
+          required
           inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
           placeholder="DNI"
           label="DNI"
@@ -242,6 +245,7 @@ export const NoteView = () => {
           placeholder="¿Qué sucedió en el día de hoy?"
           minRows={5}
           name="body"
+          required
           value={body}
           onChange={onInputChange}
         />
