@@ -59,11 +59,11 @@ const NoteReport = ({ note }) => {
     <Document>
       <Page style={styles.page}>
         <View style={styles.container}>
-          <Text style={styles.title}>Asunto: {note.title}</Text>
+          {note.title && <Text style={styles.title}>Asunto: {note.title}</Text>}
           <Text style={styles.date}>Fecha: {dateString}</Text>
-          <Text style={styles.dni}>DNI: {note.dni}</Text>
-          <Text style={styles.area}>Área: {note.area}</Text>
-          <Text style={styles.body}>Detalles: {note.body}</Text>
+          {note.dni && <Text style={styles.dni}>DNI: {note.dni}</Text>}
+          {note.area && <Text style={styles.area}>Área: {note.area}</Text>}
+          {note.body && <Text style={styles.body}>Detalles: {note.body}</Text>}
         </View>
       </Page>
     </Document>
