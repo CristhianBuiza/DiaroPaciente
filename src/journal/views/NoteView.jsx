@@ -225,6 +225,7 @@ export const NoteView = () => {
           type="text"
           variant="filled"
           fullWidth
+          inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
           placeholder="DNI"
           label="DNI"
           sx={{ border: "none", mb: 1 }}
